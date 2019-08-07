@@ -266,16 +266,20 @@ img {
   }
   /* Hero */
   .hero > h1 {
-    font-size: 34px;
+    font-size: 32px;
+    margin-top: 220px;
   }
   .hero > p {
-    font-size: 16px;
+    font-size: 1.5rem;
   }
 
   .hero {
     min-height: calc(100vh - 15px);
     align-items: center;
+    justify-content: flex-start;
     background: white url(img/banner-vertical.png) no-repeat center center;
+    background-size: cover;
+    padding: 0;
   }
 
   /* Wrapper */
