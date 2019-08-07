@@ -166,7 +166,6 @@ img {
 }
 .about button:active {
   transform: translateY(2px);
- 
 }
 .about button:focus {
   outline: 0;
@@ -255,10 +254,35 @@ img {
   /* About */
   .about {
     grid-template-columns: 1fr;
+    padding: 10px;
   }
   .about button {
     display: block;
     margin: 20px auto;
+  }
+  /* Hero */
+  .hero > h1 {
+    font-size: 22px;
+  }
+  .hero > p {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 0;
+  }
+
+  /* Wrapper */
+  .wrapper {
+    grid-gap: 20px;
+  }
+
+  /* Feature */
+
+  /* Gallery */
+  .gallery {
+    /* margin-top: 20px; */
+    grid-template-columns: 1fr 1fr;
   }
 }
 
