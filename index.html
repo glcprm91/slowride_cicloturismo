@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets.css">
+  <link rel="stylesheet" href="main.css">
+  <title>slowride_cicloturismo</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="top">
+      <header class="hero">
+        <h1>slowride_cicloturismo</h1>
+        <p>itinerari cicloturistici tra cultura e natura</p>
+      </header>
+    </div>
+
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul id="menu-list">
+        <li>
+          <a class="open" href="">Slowride</a>
+        </li>
+        <li>
+          <a href="tappe.html#menu-list">le tappe</a>
+        </li>
+        <li>
+          <a href="/post/slowride.html">chi siamo</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="features">
+      <div class="feature">
+        <span class="icon">🚲</span>
+        <h3>Bici</h3>
+        <p>La bici come mezzo di trasporto turistico</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🏰</span>
+        <h3>Cultura</h3>
+        <p>Ogni tappa, tra un borgo e l'altro, ci immerge nella cultura del posto.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍀</span>
+        <h3>Natura</h3>
+        <p>Da Nord a Sud, tra mare e collina, montagne e pianure, laghi e fiumi, ciclovie e strade di campagna, lontani
+          dalle vie trafficate, ma vicini alla natura e alla voglia di avventura.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🚵‍♂</span>
+        <h3>Viaggi</h3>
+        <p> Il tutto, ovviamente, un borgo alla
+          volta, una pedalata alla volta.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="img/copertina.png" alt="Gianpiero e Irene" class="about__mockup">
+      <div class="about__details">
+        <h2>Gianpiero e Irene</h2>
+        <p>💕Due cuori e tanta voglia di pedalare</p>
+        <p>Ogni volta una nuova avventura alla ricerca degli itinerari ciclistici migliori per scoprire l'Italia, con i
+          suoi meravigliosi borghi, le città ricche di cultura e i migliori scorci.</p>
+
+      </div>
+    </section>
+
+
+    <section class="gallery">
+      <h2>Instagram</h2>
+      <a target="_blank" href="https://www.instagram.com/p/B0oP2ohnJKh/">
+        <img src="post/img/1.png" alt="primo post instagram"><img>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/p/B0oRLQRnwZL/">
+        <img src="post/img/2.png" alt="secondo post instagram"><img>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/p/B0oTg35H2w4/">
+        <img src="post/img/3.png" alt="terzo post instagram"><img>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/p/B0qiqroHasC/">
+        <img src="post/img/4.png" alt="quarto post instagram"><img>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/p/B0vQGgogUmR/">
+        <img src="post/img/5.png" alt="quinto post instagram"><img>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/p/B0xsbN6Ahjq/">
+        <img src="post/img/6.png" alt="sesto post instagram"><img>
+      </a>
+
+
+    </section>
+  </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({
+      target
+    }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+</body>
+
+</html>

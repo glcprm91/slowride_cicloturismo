@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Le tappe slowride</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="top">
+      <header class="hero">
+        <h1>slowride_cicloturismo</h1>
+        <p>itinerari cicloturistici tra cultura e natura</p>
+      </header>
+    </div>
+
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul id="menu-list">
+        <li>
+          <a href="index.html">Slowride</a>
+        </li>
+        <li>
+          <a class="open" href="tappe.html">le tappe</a>
+        </li>
+        <li>
+          <a href="/post/slowride.html">chi siamo</a>
+        </li>
+      </ul>
+    </nav>
+
+    <article class="about">
+      <img src="post/img/6.png" alt="Gianpiero e Irene" class="about__mockup">
+      <div class="about__details">
+        <h2>Gianpiero e Irene</h2>
+        <p>💕Due cuori e tanta voglia di pedalare</p>
+        <p>Ogni volta una nuova avventura alla ricerca degli itinerari ciclistici migliori per scoprire l'Italia, con i
+          suoi meravigliosi borghi, le città ricche di cultura e i migliori scorci.</p>
+        <button>Continua a leggere →</button>
+      </div>
+    </article>
+
+
+
+    <article class="about">
+      <img src="post/img/5.png" alt="Gianpiero e Irene" class="about__mockup">
+      <div class="about__details">
+        <h2>Gianpiero e Irene</h2>
+        <p>💕Due cuori e tanta voglia di pedalare</p>
+        <p>Ogni volta una nuova avventura alla ricerca degli itinerari ciclistici migliori per scoprire l'Italia, con i
+          suoi meravigliosi borghi, le città ricche di cultura e i migliori scorci.</p>
+        <button>Continua a leggere →</button>
+      </div>
+    </article>
+
+    <article class="about">
+      <img src="post/img/4.png" alt="Gianpiero e Irene" class="about__mockup">
+      <div class="about__details">
+        <h2>Gianpiero e Irene</h2>
+        <p>💕Due cuori e tanta voglia di pedalare</p>
+        <p>Ogni volta una nuova avventura alla ricerca degli itinerari ciclistici migliori per scoprire l'Italia, con i
+          suoi meravigliosi borghi, le città ricche di cultura e i migliori scorci.</p>
+        <button>Continua a leggere →</button>
+      </div>
+    </article>
+
+    <article class="about">
+      <img src="post/img/3.png" alt="Gianpiero e Irene" class="about__mockup">
+      <div class="about__details">
+        <h2>Gianpiero e Irene</h2>
+        <p>💕Due cuori e tanta voglia di pedalare</p>
+        <p>Ogni volta una nuova avventura alla ricerca degli itinerari ciclistici migliori per scoprire l'Italia, con i
+          suoi meravigliosi borghi, le città ricche di cultura e i migliori scorci.</p>
+        <button>Continua a leggere →</button>
+      </div>
+    </article>
+
+    <article class="about">
+      <img src="post/img/2.png" alt="Gianpiero e Irene" class="about__mockup">
+      <div class="about__details">
+        <h2>Orta San Giulio</h2>
+        <p>💕Due cuori e tanta voglia di pedalare</p>
+        <p>Ogni volta una nuova avventura alla ricerca degli itinerari ciclistici migliori per scoprire l'Italia, con i
+          suoi meravigliosi borghi, le città ricche di cultura e i migliori scorci.</p>
+        <button>Continua a leggere →</button>
+
+      </div>
+    </article>
+
+    <article class="about">
+      <img src="post/img/1.png" alt="Gianpiero e Irene" class="about__mockup">
+      <div class="about__details">
+        <h2>slowride_cicloturismo</h2>
+        <p>🚴‍♀️🚴‍♂️ Quelli del cicloturismo "lento" </p>
+        <p>Slowride, il cicloturismo di borgo in borgo, è un progetto che nasce dalla voglia di condividere la passione
+          dei viaggi in bicicletta.</p>
+        <button>Continua a leggere →</button>
+      </div>
+    </article>
+
+  </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({
+      target
+    }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+</body>
+
+</html>
