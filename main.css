@@ -166,6 +166,10 @@ img {
 }
 .about button:active {
   transform: translateY(2px);
+ 
+}
+.about button:focus {
+  outline: 0;
 }
 
 /* Gallery! */
