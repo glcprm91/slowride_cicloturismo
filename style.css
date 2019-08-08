@@ -303,7 +303,7 @@ figcaption {
     transform: rotateX(90deg);
     transition: all 0.5s;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
   }
 
   [aria-expanded="true"] ~ ul {
