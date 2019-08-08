@@ -29,7 +29,6 @@ em {
 }
 
 img {
-  /* max-width: 100%; */
   border-radius: 5px;
 }
 
@@ -49,11 +48,6 @@ a {
 }
 
 icon {
-  /* font-size: 30px;
-  display: inline-block;
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 10%; */
   margin: 0px !important;
   display: inline !important;
 }
@@ -189,7 +183,7 @@ figcaption {
   }
 }
 
-/* Images post flow */
+/* Menu */
 
 .menu ul {
   display: -ms-grid;
@@ -233,6 +227,8 @@ figcaption {
   display: none;
 }
 
+/* Tablet media query */
+
 @media screen and (max-width: 1200px) {
   .post {
     grid-gap: 5px 0;
@@ -255,13 +251,14 @@ figcaption {
     margin: 20px 10px;
   }
 
-  .tip-left {
-    text-align: center;
-  }
-
   .tip {
     grid-column: 2/-2;
     font-size: 15px;
+  }
+
+
+  .tip-left {
+    text-align: center;
   }
 
   .tip img {
@@ -274,6 +271,8 @@ figcaption {
     object-fit: cover;
   }
 }
+
+/* phone mediaquery */
 
 @media (max-width: 700px) {
   .post > * {
