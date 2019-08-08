@@ -342,10 +342,11 @@ figcaption {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 600px) {
   .post {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
   article.post h2 {
     display: block;
