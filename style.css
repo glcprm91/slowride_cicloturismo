@@ -178,7 +178,6 @@ figcaption {
   article.post h2 {
     font-size: 50px;
     font-style: italic;
-    font-weight: 100;
     margin: 0;
     grid-column: 1 / -1;
     text-align: center;
@@ -201,6 +200,7 @@ figcaption {
 /* Menu */
 
 .menu ul {
+  font-family: Cambria, Cochin, Georgia, "Times New Roman", Times, serif;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
