@@ -105,6 +105,9 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
+  .post {
+    grid-template-columns: 1fr;
+  }
   article.post h2 {
     font-size: 28px;
     font-weight: 900;
@@ -113,7 +116,7 @@ h3 {
     font-size: 22px;
   }
 
-  blockquote > p{
+  blockquote > p {
     line-height: 1.4;
   }
 }
@@ -244,30 +247,6 @@ figcaption {
   }
 }
 
-/* .menu ul {
-  display: grid;
-  grid-gap: 10px;
-  padding: 0;
-  list-style: none;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
-
-.menu a {
-  font-weight: 900;
-  color: var(--black);
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
-  background: var(--yellow);
-  display: block;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  color: var(--black);
-  text-transform: uppercase;
-  font-size: 20px;
-  transition: all 0.5s;
-} */
-
 .menu ul {
   display: grid;
   grid-gap: 10px;
@@ -313,10 +292,6 @@ figcaption {
     grid-column: 1/-1;
   }
 
-  .tip.profile {
-    grid-column: 1/-1;
-  }
-
   [aria-controls="menu-list"] {
     display: block;
     /* margin-bottom: 10px; */
@@ -359,5 +334,9 @@ figcaption {
 
   .menu ul {
     margin-block-end: 0;
+  }
+
+  .tip.profile {
+    grid-column: 1/-1;
   }
 }
