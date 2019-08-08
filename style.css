@@ -365,6 +365,6 @@ figcaption {
 @media screen and (max-width: 600px) {
   .post p {
     -ms-grid-column-span: 1;
-    grid-column: span 1/-1;
+    grid-column: 1/-1;
   }
 }
