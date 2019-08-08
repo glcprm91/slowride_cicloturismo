@@ -258,13 +258,6 @@ figcaption {
     grid-column: 1 / -1;
   }
 
-  /* :not(.tip),
-  :not(.tip-right),
-  :not(nav .menu) {
-    grid-column: 1 / -1;
-    margin: 20px 10px;
-  } */
-
   .tip {
     grid-column: 2/-2;
     font-size: 15px;
@@ -362,7 +355,7 @@ figcaption {
   }
   article.post h2 {
     display: block;
-    font-size: 36px;
+    font-size: 1.5rem;
   }
   article.post h3 {
     display: block;
