@@ -258,13 +258,12 @@ figcaption {
     grid-column: 1 / -1;
   }
 
-  /*error*/
-  :not(.tip),
+  /* :not(.tip),
   :not(.tip-right),
   :not(nav .menu) {
-    /* grid-column: 1 / -1; */
-    /* margin: 20px 10px; */
-  }
+    grid-column: 1 / -1;
+    margin: 20px 10px;
+  } */
 
   .tip {
     grid-column: 2/-2;
