@@ -136,11 +136,11 @@ figcaption {
     grid-template-columns: 1fr;
   }
   article.post h2 {
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 1000;
   }
   article.post h3 {
-    font-size: 22px;
+    font-size: 12px;
   }
 
   blockquote > p {
