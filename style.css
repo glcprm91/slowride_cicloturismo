@@ -109,7 +109,7 @@ h3 {
     grid-template-columns: 1fr;
   }
   article.post h2 {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 900;
   }
   article.post h3 {
@@ -121,12 +121,12 @@ h3 {
   }
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .post {
     grid-gap: 10px 0px;
     margin: 0 auto;
   }
-}
+} */
 
 .post > * {
   grid-column: 2 / -2;
