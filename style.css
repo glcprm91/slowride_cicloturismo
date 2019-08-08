@@ -17,15 +17,6 @@ html {
   box-sizing: inherit;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 5px 0;
-}
-
 p {
   line-height: 1.8;
 }
@@ -34,8 +25,6 @@ em {
   display: inline;
   margin: 0;
 }
-
-/* images in tips also  */
 
 img {
   /* max-width: 100%; */
@@ -87,7 +76,7 @@ h3 {
   display: grid;
   max-width: 1300px;
   margin: 100px auto;
-  grid-gap: 10px 50px;
+  /* grid-gap: 10px 50px; */
   grid-template-columns: 3fr 12fr 5fr;
 }
 
