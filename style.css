@@ -342,7 +342,7 @@ figcaption {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .post {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
