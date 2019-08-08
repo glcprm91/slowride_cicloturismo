@@ -325,8 +325,7 @@ figcaption {
   }
 
   button {
-    margin: 5px;
-    margin-bottom: 0;
+    margin: 0 auto;
   }
 
   .menu a {
