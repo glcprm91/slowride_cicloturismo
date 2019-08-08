@@ -19,21 +19,6 @@ html {
   box-sizing: inherit;
 }
 
-.item {
-  /* We center the contents of these items. You can also do this with flexbox too! */
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid rgba(0, 0, 0, 0.03);
-  border-radius: 5px;
-  font-size: 35px;
-  background-color: var(--yellow); /* best colour */
-}
-
-.item p {
-  margin: 0 0 5px 0;
-}
-
 p {
   line-height: 1.8;
 }
@@ -173,6 +158,7 @@ figcaption {
   margin: 0;
 }
 
+
 @media screen and (max-width: 1200px) {
   article.post h1,
   article.post h2 {
@@ -234,6 +220,7 @@ figcaption {
 }
 
 .menu a.open {
+  text-decoration: underline var(--black);
   -webkit-text-decoration: underline wavy var(--black);
   text-decoration: underline wavy var(--black);
 }
