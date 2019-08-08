@@ -5,7 +5,7 @@
 
 html {
   color: #444;
-  font-family: Cambria, Cochin, Georgia, "Times New Roman", Times, serif;
+  font-family: "Hind", sans-serif;
   font-size: 20px;
   background-color: aliceblue;
 }
@@ -22,15 +22,14 @@ em {
 /* images in tips also  */
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   border-radius: 5px;
 }
 
-@media screen and (max-width: 1000px) {
-  img {
-    display: block;
-    max-width: 98%;
-  }
+button {
+  background: #ffc600;
+  border: 0;
+  padding: 10px 20px;
 }
 
 a {
@@ -68,6 +67,14 @@ h3 {
   text-align: center;
 }
 
+.post {
+  display: grid;
+  max-width: 1300px;
+  margin: 100px auto;
+  grid-gap: 10px 50px;
+  grid-template-columns: 3fr 12fr 5fr;
+}
+
 @media screen and (max-width: 1200px) {
   article.post h1,
   article.post h2 {
@@ -88,8 +95,10 @@ h3 {
   }
 }
 
-@media screen and (max-width: 550px) {
-  article.post h1,
+@media screen and (max-width: 600px) {
+  article.post h1 {
+    font-weight: 900;
+  }
   article.post h2 {
     font-size: 36px;
   }
@@ -98,17 +107,15 @@ h3 {
   }
 }
 
-.post {
-  display: grid;
-  max-width: 1300px;
-  margin: 100px auto;
-  grid-gap: 10px 50px;
-  grid-template-columns: 3fr 12fr 5fr;
-}
-
 @media screen and (max-width: 1200px) {
   .post {
     grid-gap: 10px 0px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .post {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -120,8 +127,6 @@ h3 {
   .post p {
     grid-column: 1/-1;
   }
-
- 
 }
 
 .post > figure {
@@ -133,6 +138,7 @@ h3 {
 figure > img {
   width: 100%;
   object-fit: contain;
+  min-width: 250px;
 }
 
 figcaption {
@@ -177,6 +183,10 @@ figcaption {
   border-left: 2px solid var(--yellow);
 }
 
+.tip-right img {
+  max-width: 250px;
+}
+
 .tip ul {
   list-style-type: square;
   padding: 0;
@@ -208,9 +218,7 @@ figcaption {
     grid-column: 1 / -1;
     margin: 20px 10px;
   }
-}
 
-@media screen and (max-width: 1200px) {
   .tip-left {
     text-align: center;
   }
@@ -224,12 +232,13 @@ figcaption {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     width: 80%;
     object-fit: cover;
   }
 }
 
-.menu ul {
+/* .menu ul {
   display: grid;
   grid-gap: 10px;
   padding: 0;
@@ -251,6 +260,32 @@ figcaption {
   text-transform: uppercase;
   font-size: 20px;
   transition: all 0.5s;
+} */
+
+.menu ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  font-weight: 900;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.menu a {
+  background: var(--yellow);
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.menu a:hover {
+  background-color: #f5cd03;
 }
 
 .menu a:hover {
@@ -265,12 +300,6 @@ figcaption {
   display: none;
 }
 
-button {
-  background: #ffc600;
-  border: 0;
-  padding: 10px 20px;
-}
-
 @media (max-width: 1000px) {
   .menu {
     order: -1; /*display menu on top*/
@@ -280,7 +309,7 @@ button {
 
   [aria-controls="menu-list"] {
     display: block;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
 
   .menu ul {
@@ -310,6 +339,22 @@ button {
   }
 }
 
-.incomplete {
-  border-left: 5px solid red;
+@media (max-width: 700px) {
+  .menu {
+    order: 0; /*display menu on top*/
+    perspective: 800px;
+  }
+
+  button {
+    margin: 15px;
+    margin-bottom: 0;
+  }
+
+  .menu a {
+    font-size: 15px;
+  }
+
+  .menu ul {
+    margin-block-end: 0;
+  }
 }
