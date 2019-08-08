@@ -76,8 +76,35 @@ h3 {
   display: grid;
   max-width: 1300px;
   margin: 100px auto;
-  /* grid-gap: 10px 50px; */
+  grid-gap: 10px 50px;
   grid-template-columns: 3fr 12fr 5fr;
+}
+
+.post > * {
+  grid-column: 2 / -2;
+}
+
+.post > figure {
+  margin: 0;
+}
+
+figure > img {
+  width: 100%;
+  object-fit: contain;
+  /* min-width: 250px; */
+}
+
+figcaption {
+  font-size: 14px;
+  text-align: center;
+}
+
+.post > blockquote {
+  grid-column: 2 / -2;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -110,7 +137,7 @@ h3 {
   }
   article.post h2 {
     font-size: 28px;
-    font-weight: 900;
+    font-weight: 1000;
   }
   article.post h3 {
     font-size: 22px;
@@ -128,40 +155,13 @@ h3 {
   }
 }
 
-.post > * {
-  grid-column: 2 / -2;
-}
-
 @media screen and (max-width: 600px) {
   .post p {
     grid-column: span 1/-1;
   }
 }
 
-.post > figure {
-  margin: 0;
-}
-
 /* Images post flow */
-
-figure > img {
-  width: 100%;
-  object-fit: contain;
-  min-width: 250px;
-}
-
-figcaption {
-  font-size: 14px;
-  text-align: center;
-}
-
-.post > blockquote {
-  grid-column: 2 / -2;
-  font-size: 40px;
-  font-style: italic;
-  text-align: center;
-  margin: 0;
-}
 
 @media screen and (max-width: 1200px) {
   .post > blockquote {
@@ -303,6 +303,7 @@ figcaption {
     transform: rotateX(90deg);
     transition: all 0.5s;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
   }
 
   [aria-expanded="true"] ~ ul {
