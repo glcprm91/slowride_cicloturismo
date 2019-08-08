@@ -93,6 +93,10 @@ h3 {
     grid-column: 1 / -1;
     text-align: center;
   }
+
+  .post {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -111,11 +115,6 @@ h3 {
   .post {
     grid-gap: 10px 0px;
     margin: 0 auto;
-  }
-}
-@media screen and (max-width: 600px) {
-  .post {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -224,7 +223,7 @@ figcaption {
   }
 
   .tip {
-    grid-column: 1/-1;
+    grid-column: 2/-2;
     font-size: 15px;
   }
 
@@ -300,10 +299,14 @@ figcaption {
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
   .menu {
-    order: -1; /*display menu on top*/
+    order: 0;
     perspective: 800px;
+    grid-column: 1/-1;
+  }
+
+  .tip.profile {
     grid-column: 1/-1;
   }
 
@@ -336,13 +339,6 @@ figcaption {
 
   [aria-expanded="true"] .open {
     display: none;
-  }
-}
-
-@media (max-width: 700px) {
-  .menu {
-    order: 0; /*display menu on top*/
-    perspective: 800px;
   }
 
   button {
