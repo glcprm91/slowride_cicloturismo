@@ -109,7 +109,7 @@ h3 {
     grid-template-columns: 1fr;
   }
   article.post h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 900;
   }
   article.post h3 {
@@ -121,12 +121,12 @@ h3 {
   }
 }
 
-/* @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .post {
-    grid-gap: 10px 0px;
+    grid-gap: 5px 0;
     margin: 0 auto;
   }
-} */
+}
 
 .post > * {
   grid-column: 2 / -2;
@@ -134,7 +134,7 @@ h3 {
 
 @media screen and (max-width: 600px) {
   .post p {
-    grid-column: 1/-1;
+    grid-column: span 1/-1;
   }
 }
 
@@ -324,7 +324,7 @@ figcaption {
   }
 
   button {
-    margin: 15px;
+    margin: 5px;
     margin-bottom: 0;
   }
 
