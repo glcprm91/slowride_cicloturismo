@@ -4,12 +4,12 @@
 }
 
 html {
-  color: #444;
   font-family: "Hind", sans-serif;
   font-size: 20px;
   background-color: aliceblue;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  color: #444;
 }
 
 *,
@@ -17,6 +17,21 @@ html {
 *:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+}
+
+.item {
+  /* We center the contents of these items. You can also do this with flexbox too! */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  font-size: 35px;
+  background-color: var(--yellow); /* best colour */
+}
+
+.item p {
+  margin: 0 0 5px 0;
 }
 
 p {
@@ -232,7 +247,7 @@ figcaption {
 @media screen and (max-width: 1200px) {
   .post {
     grid-gap: 5px 0;
-    margin: 0 auto;
+    margin: 0 auto !important;
   }
 
   .post > blockquote {
@@ -248,14 +263,13 @@ figcaption {
   :not(.tip-right),
   :not(nav .menu) {
     grid-column: 1 / -1;
-    margin: 20px 10px;
+    /* margin: 20px 10px; */
   }
 
   .tip {
     grid-column: 2/-2;
     font-size: 15px;
   }
-
 
   .tip-left {
     text-align: center;
