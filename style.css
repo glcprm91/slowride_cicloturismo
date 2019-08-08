@@ -15,7 +15,6 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-  margin: 0;
 }
 
 p {
@@ -106,14 +105,16 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
-  article.post h1 {
+  article.post h2 {
+    font-size: 28px;
     font-weight: 900;
   }
-  article.post h2 {
-    font-size: 36px;
-  }
   article.post h3 {
-    font-size: 28px;
+    font-size: 22px;
+  }
+
+  blockquote > p{
+    line-height: 1.4;
   }
 }
 
