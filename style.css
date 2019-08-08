@@ -80,9 +80,9 @@ h3 {
   grid-template-columns: 3fr 12fr 5fr;
 }
 
-.post > * {
+/* .post > * {
   grid-column: 2 / -2;
-}
+} */
 
 .post > figure {
   margin: 0;
@@ -136,11 +136,11 @@ figcaption {
     grid-template-columns: 1fr;
   }
   article.post h2 {
-    font-size: 8px;
+    font-size: 28px;
     font-weight: 1000;
   }
   article.post h3 {
-    font-size: 8px;
+    font-size: 22px;
   }
 
   blockquote > p {
