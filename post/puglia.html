@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bari - Taranto - Matera</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/assets.css">
+  <link rel="stylesheet" href="/main.css"> -->
+</head>
+
+<body>
+
+
+
+  <article class="post">
+
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul id="menu-list">
+        <li>
+          <a href="../index.html">Slowride</a>
+        </li>
+        <li>
+          <a class="open" href="../tappe.html#menu-list">le tappe</a>
+        </li>
+        <li>
+          <a href="../post/slowride.html">chi siamo</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>Puglia 2017</h1>
+    <figure>
+      <img src="img/14.png" alt="Gianpiero Spelozzo Puglia 2017">
+      <figcaption>Pedalando tra le bellezze della Puglia</figcaption>
+    </figure>
+
+
+    <h2>Bari - Taranto - Matera</h2>
+    <h3>
+      In bicicletta tra le province di 📍Bari, 📍Taranto e 📍Matera
+    </h3>
+
+    <figure>
+      <img src="img/10.png" alt="Taranto - Matera">
+      <figcaption>Al confine tra Taranto e Matera</figcaption>
+    </figure>
+
+    <p>Prima tappa 📍Gioia del Colle - 📍Matera: si svolge su provinciali libere dal traffico e contornate da muretti in
+      pietra battuta, spighe di grano e pale eoliche. <p>🚵 36 km totali, molto piacevoli ma privi di punti di ristoro🍔
+      </p>
+      <p>Affascinanti soprattutto gli ultimi 12 km, che si snodano nella provincia di Matera, fino alla Città dei Sassi,
+        raggiungibile al termine di una bella salita, unica "asperità" della giornata. 💪
+      </p>
+
+
+
+      <h2>Alberobello</h2>
+      <h3>
+        Dallo Ionio all'Adriatico con una sosta tra i trulli
+      </h3>
+
+      <figure>
+        <img src="img/11.png" alt="Alberobello">
+        <figcaption>Alberobello</figcaption>
+      </figure>
+
+      <p>Si parte da 📍Marina di Ginosa e dopo una decina di chilometri di complanare si sale per la bella 📍Crispiano
+        e
+        quindi 📍Martina Franca, dal lato della storica (ciclisticamente parlando) salita delle Pianelle (altezza
+        massima
+        513 metri).
+      </p>
+
+      <div class="tip tip-left">
+        <p>🚵 TIP interessante per voi da #slowride: da Martina Franca ad Alberobello evitare sia la Strada Statale che
+          la
+          SP58 e percorrere la strada Monte Tre Carlini.
+        </p>
+      </div>
+
+      <figure>
+        <img src="img/12.png" alt="Sosta Alberobello">
+        <figcaption>Sosta ad Alberobello</figcaption>
+      </figure>
+
+
+
+      <p>Doverosa deviazione ad Alberobello, che non necessita di ulteriori presentazioni, e via verso
+        l'Adriatico, per un po' di meritato riposo tra 📍Monopoli e 📍Polignano a Mare. Lunghezza stimata: circa 110
+        km.
+      </p>
+
+      <figure>
+        <img src="img/13.png" alt="Gianpiero Spelozzo Alberobello">
+        <figcaption>La fatica dopo l'arrivo ad Alberobello</figcaption>
+      </figure>
+
+
+      <h2>Polignano</h2>
+      <h3>
+        🚴‍♂Un finale perfetto🚴‍♀
+      </h3>
+
+      <figure>
+        <img src="img/15.png" alt="Polignano a Mare">
+        <figcaption>La spiaggia di Polignano a Mare</figcaption>
+      </figure>
+
+      <p> Polignano, il finale perfetto per il nostro tour in Puglia del 2017 🚴‍♀️🚴‍♂️ </p>
+      <p>Bagno a Cala Porto, selfie con la statua di Modugno e si torna a casa ✌
+      </p>
+
+
+
+
+      <div class="tip tip-right">
+        <p>Seguici su instagram
+          <a target="_blank" href="https://www.instagram.com/slowride_cicloturismo/?igshid=1n26einn6cu6q">
+            <icon>👉📸</icon> #slowride_cicloturismo
+          </a>
+        </p>
+      </div>
+
+      <div class="tip tip-right">
+        <p>
+          #slow #slowtravel #travelforlife #traveladdict #bike #bikepacking #biketravel #cicloturismo #cicloturista
+          #puglia #igerspuglia #ig_puglia #seaside #bicicletta #bici #summerstyle #sunnyday #igersitalia #igers
+          #ig_italy
+          #ig_bikes
+        </p>
+      </div>
+
+
+
+  </article>
+
+  <footer>
+    <p>Coded by Gianluca Primavera</p>
+    <a href="">2019© Privacy & Cookies</a>
+  </footer>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({
+      target
+    }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+</body>
+
+</html>

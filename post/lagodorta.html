@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lago d'Orta - Lago Maggiore</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/assets.css">
+  <link rel="stylesheet" href="/main.css"> -->
+</head>
+
+<body>
+
+
+
+  <article class="post">
+
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul id="menu-list">
+        <li>
+          <a href="../index.html">Slowride</a>
+        </li>
+        <li>
+          <a class="open" href="../tappe.html#menu-list">le tappe</a>
+        </li>
+        <li>
+          <a  href="../post/slowride.html">chi siamo</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h2>Lago d'Orta - Lago Maggiore</h2>
+    <h3>
+     25km di sali e scendi
+    </h3>
+
+    <p>
+      Dal Lago d'Orta al Lago Maggiore, 25 km circa di sali e scendi, a volte morbidi, a volte più
+      aspri.
+    </p>
+
+    <figure>
+      <img src="img/3.png" alt="Tornanti Lago d'Orta">
+      <figcaption>Alcuni tornanti lungo il percorso</figcaption>
+    </figure>
+
+    <p>
+      Si parte da Orta San Giulio per salire fino a Sovazza, frazione di Armeno (NO), a circa 637 s.l.m. quindi si
+      prosegue in un tratto meno impegnativo ma più selvaggio fino a Vezzo, dove comincia la lunga e panoramica discesa
+      verso Stresa (VB) perla del Lago Maggiore <icon>🚴‍♀️🚴‍♂️</icon>
+    </p>
+
+    <figure>
+      <img src="img/2.png" alt="Orta San Giulio">
+      <figcaption>Orta San Giulio</figcaption>
+    </figure>
+
+    <div class="tip tip-right">
+      <p>Seguici su instagram
+        <a target="_blank" href="https://www.instagram.com/slowride_cicloturismo/?igshid=1n26einn6cu6q">
+          <icon>👉📸</icon> #slowride_cicloturismo
+        </a>
+      </p>
+    </div>
+
+    <div class="tip tip-right">
+      <p>
+        #cicloturismo #lagomaggiore #viaggiinbicletta #lagodorta #stresa #ortasangiulio #armeno #sovazza #vezzo
+        #laghiditalia #bikeadventure #ciclismo #itinerari #bicicletta #mtb #italia #cittaitaliane
+      </p>
+    </div>
+
+
+
+  </article>
+
+  <footer>
+    <p>Coded by Gianluca Primavera</p>
+    <a href="">2019© Privacy & Cookies</a>
+  </footer>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({
+      target
+    }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+</body>
+
+</html>

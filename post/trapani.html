@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trapani - Erice</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/assets.css">
+  <link rel="stylesheet" href="/main.css"> -->
+</head>
+
+<body>
+
+
+
+  <article class="post">
+
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul id="menu-list">
+        <li>
+          <a href="../index.html">Slowride</a>
+        </li>
+        <li>
+          <a class="open" href="../tappe.html#menu-list">le tappe</a>
+        </li>
+        <li>
+          <a href="../post/slowride.html">chi siamo</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h2>Trapani - Erice</h2>
+    <h3>
+      Uno sguardo su Trapani, le Isole Egadi e il Mar Tirreno...
+    </h3>
+
+    <p>
+      Nella salita che da Trapani porta a Erice la bellezza del panorama fa dimenticare anche la fatica:
+    </p>
+
+    <figure>
+      <img src="img/4.png" alt="Trapani - Erice">
+      <figcaption>La vista da Erice</figcaption>
+    </figure>
+
+    <p>
+      una salita di circa 12 km per un dislivello di oltre 750 metri e il sogno del Tirreno dopo ogni tornante.<icon>
+        🚴‍♀️🚴‍♂️</icon>
+    </p>
+
+    <div class="tip tip-right">
+      <p>Seguici su instagram
+        <a target="_blank" href="https://www.instagram.com/slowride_cicloturismo/?igshid=1n26einn6cu6q">
+          <icon>👉📸</icon> #slowride_cicloturismo
+        </a>
+      </p>
+    </div>
+
+    <div class="tip tip-right">
+      <p>
+        #cicloturismo #cicloturista #bikeadventure #biketour #viaggiinbicletta #trapani #erice #egadi #siciliainbici
+        #bicicletta #sicily #saliteinbici #ciclismo #panorami #cittaitaliane
+      </p>
+    </div>
+
+
+
+  </article>
+
+  <footer>
+    <p>Coded by Gianluca Primavera</p>
+    <a href="">2019© Privacy & Cookies</a>
+  </footer>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({
+      target
+    }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+</body>
+
+</html>

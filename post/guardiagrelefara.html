@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guardiagrele - Fara San Martino</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/assets.css">
+  <link rel="stylesheet" href="/main.css"> -->
+</head>
+
+<body>
+
+
+
+  <article class="post">
+
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul id="menu-list">
+        <li>
+          <a href="../index.html">Slowride</a>
+        </li>
+        <li>
+          <a class="open" href="../tappe.html#menu-list">le tappe</a>
+        </li>
+        <li>
+          <a href="../post/slowride.html">chi siamo</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h2>Guardiagrele - Fara San Martino</h2>
+    <h3>
+      Un bellissimo itinerario di media montagna nel cuore dell'Abruzzo
+    </h3>
+
+    <p>
+      Con la Majella che la fa da padrone, tra le località di <icon>📍</icon>Comino, <icon>📍</icon>Pennapiedimonte,
+      <icon>📍</icon>Palombaro e <icon>📍</icon>Casoli.
+    </p>
+
+    <figure>
+      <img src="img/6.png" alt="Guardiagrele - Fara San Martino">
+      <figcaption>La montagna della Majella sullo sfondo</figcaption>
+    </figure>
+
+    <p>
+      Alla scoperta di numerosi tesori naturali, comwe l'Altare di Atena (Pennapiedimonte) e le Sorgenti del Fiume
+      Verde(Fara) <icon>🚵‍♂️🚵‍♀️</icon>
+    </p>
+
+    <div class="tip tip-right">
+      <p>Seguici su instagram
+        <a target="_blank" href="https://www.instagram.com/slowride_cicloturismo/?igshid=1n26einn6cu6q">
+          <icon>👉📸</icon> #slowride_cicloturismo
+        </a>
+      </p>
+    </div>
+
+    <div class="tip tip-right">
+      <p>
+        #cicloturismo #slowride #pedalare #cicloturista #donneinbici #bikeadventure #majella #farasanmartino
+        #guardiagrele #abruzzo #abruzzolovers #parconazionalemajella #igbike #igabruzzo #abruzzonelcuore #igersabruzzo
+        #igers_abruzzo
+      </p>
+    </div>
+
+
+
+  </article>
+
+  <footer>
+    <p>Coded by Gianluca Primavera</p>
+    <a href="">2019© Privacy & Cookies</a>
+  </footer>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({
+      target
+    }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+</body>
+
+</html>
