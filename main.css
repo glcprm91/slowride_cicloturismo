@@ -12,7 +12,7 @@ img {
   max-width: 100%;
 }
 
-/* .wrapper */
+/* Wrapper */
 
 .wrapper {
   display: grid;
@@ -241,7 +241,9 @@ img {
   .top {
     grid-template-areas: "hero hero";
   }
+
   /* About */
+
   .about {
     grid-template-columns: 1fr;
     padding: 10px;
@@ -250,7 +252,9 @@ img {
     display: block;
     margin: 20px auto;
   }
+
   /* Hero */
+
   .hero > h1 {
     font-size: 32px;
     margin-top: 220px;
@@ -269,14 +273,14 @@ img {
   }
 
   /* Wrapper */
+
   .wrapper {
     grid-gap: 20px;
     margin-top: 0;
   }
 
-  /* Feature */
-
   /* Gallery */
+
   .gallery {
     /* margin-top: 20px; */
     grid-template-columns: 1fr 1fr;
@@ -295,7 +299,7 @@ img {
 }
 
 .menu a.open {
-  text-decoration: underline wavy var(--black);
+  text-decoration: underline var(--black);
 }
 
 footer {

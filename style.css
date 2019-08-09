@@ -40,8 +40,8 @@ button {
 
 a {
   color: black;
-  -webkit-text-decoration: underline wavy var(--yellow);
-  text-decoration: underline wavy var(--yellow);
+  -webkit-text-decoration: underline var(--yellow);
+  text-decoration: underline var(--yellow);
   font-size: 18px;
   display: inline-block;
   margin: 0;
@@ -158,7 +158,6 @@ figcaption {
   margin: 0;
 }
 
-
 @media screen and (max-width: 1200px) {
   article.post h1,
   article.post h2 {
@@ -221,8 +220,8 @@ figcaption {
 
 .menu a.open {
   text-decoration: underline var(--black);
-  -webkit-text-decoration: underline wavy var(--black);
-  text-decoration: underline wavy var(--black);
+  -webkit-text-decoration: underline var(--black);
+  text-decoration: underline var(--black);
 }
 
 [aria-controls="menu-list"] {
@@ -283,7 +282,7 @@ figcaption {
 
   [aria-controls="menu-list"] {
     display: block;
-    /* margin-bottom: 10px; */
+     /* margin-bottom: 10px; */
   }
 
   .menu ul {
@@ -359,4 +358,20 @@ figcaption {
     -ms-grid-column-span: 1;
     grid-column: 1/-1;
   }
+}
+
+footer {
+  font-family: Cambria, Cochin, Georgia, "Times New Roman", Times, serif;
+  font-weight: 900;
+  font-size: 15px;
+  max-width: 1300px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border-left: 5px solid var(--yellow);
+}
+
+footer a {
+  font-size: 15px;
 }
